@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        #chat-box {
+            width: 80%;
+            max-width: 600px;
+            height: 400px;
+            border: 1px solid #ddd;
+            background: #fff;
+            overflow-y: scroll;
+            padding: 10px;
+            margin: 20px 0;
+        }
+        #chat-response {
+            margin-bottom: 10px;
+        }
+        .chat-message {
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        .bot-message {
+            background: #e1f5fe;
+            color: #333;
+        }
+        .user-message {
+            background: #c5e1a5;
+            color: #333;
+            text-align: right;
+        }
+        form {
+            width: 80%;
+            max-width: 600px;
+            display: flex;
+            align-items: center;
+        }
+        input {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+    <script src="static\js\chatbot.js" defer></script> <!-- Ensure your JS file is linked -->
+</head>
+<body background="https://www.wallpaperflare.com/static/168/377/65/simple-background-gradient-simple-background-wallpaper.jpg">
+    <h1>Chat with Bot</h1>
+    <div id="chat-box">
+        <div id="chat-response"></div>
+    </div>
+    <form id="chat-form" method="POST">
+        <input type="text" id="chat_input" placeholder="Type your message here" required>
+        <button type="submit">Send</button>
+    </form>      
+</body>
+</html>

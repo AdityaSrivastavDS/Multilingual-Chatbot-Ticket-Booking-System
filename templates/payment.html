@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Payment - Ticket Booking System{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Payment</h2>
+    <form action="{{ url_for('payment', ticket_id=ticket_id) }}" method="POST" id="payment-form">
+        <div class="form-group">
+            <label for="payment_method_id">Payment Method ID</label>
+            <input type="text" id="payment_method_id" name="payment_method_id" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Pay</button>
+    </form>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+        // Stripe payment handling script
+    </script>
+</div>
+{% endblock %}

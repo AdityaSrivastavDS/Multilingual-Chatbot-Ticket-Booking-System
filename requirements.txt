@@ -1,0 +1,17 @@
+Flask
+Flask-Cors
+stripe
+gunicorn
+Werkzeug
+Jinja2
+itsdangerous
+click
+Flask-SQLAlchemy
+SQLAlchemy
+Flask-Migrate
+psycopg2-binary  
+flask-wtf
+WTForms
+model-viewer  
+flask_babel
+pymysql

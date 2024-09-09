@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Ticket Booking System{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to Museum Ticket Booking System!</h1>
+    <p class="lead">Your one-stop solution for all your ticket booking needs.</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('book_ticket') }}" role="button">Book a Ticket</a>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <h2>About Us</h2>
+        <p>Learn more about what we do and how we can help you.</p>
+        <a class="btn btn-secondary" href="{{ url_for('about') }}">Read More</a>
+    </div>
+    <div class="col-md-6">
+        <h2>Our Services</h2>
+        <p>Explore the variety of services we offer.</p>
+        <a class="btn btn-secondary" href="{{ url_for('services') }}">Explore Services</a>
+    </div>
+</div>
+{% endblock %}

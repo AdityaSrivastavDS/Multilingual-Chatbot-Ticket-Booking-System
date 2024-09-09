@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}About Us - Ticket Booking System{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2><b><u>About Us</u></b></h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h3><b>Our Mission</b></h3>
+            <p>Welcome to Museum Ticekt Booking Platform!, your ultimate gateway to the world of 
+                museums. Our innovative web app is designed to transform how you experience cultural
+                exploration. With a user-friendly interface, you can effortlessly browse through a 
+                diverse selection of museums and exhibitions, view detailed information, and book your
+                tickets in just a few clicks. We provide real-time availability updates and secure 
+                booking options to ensure a smooth and stress-free experience. Whether you're planning 
+                a visit to a local gallery or a major international institution, We makes it simple and
+                convenient to immerse yourself in art, history, and culture. Let us help you turn every
+                museum visit into a memorable adventure!
+            </p>
+        </div>
+        <div class="col-md-6">
+            <h3><b><u>Meet the Team</u></b></h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/team_member1.jpg') }}" class="card-img-top" alt="Team Member 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Aditya Srivastav</h5>
+                            <p class="card-text">CEO & Founder</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

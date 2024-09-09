@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Museum Items</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .gallery-item {
+            width: 300px;
+            text-align: center;
+            padding: 10px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        model-viewer {
+            width: 100%;
+            height: 300px;
+            background-color: #e0e0e0;
+        }
+    </style>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body background="https://www.ultraimagehub.com/wallpapers/tr:flp-false,gx-0.8,gy-0.1,q-75,rh-3264,rw-5824,th-1080,tw-1920/1247494223637385246.jpeg">
+    <h1>Explore Museum Items</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <h2>Dinosaur Sculpture</h2>
+            <model-viewer src="/static/models/dinasaur.glb" alt="Item 1"
+                          auto-rotate camera-controls background-color="#f0f0f0"></model-viewer>
+        </div>
+        <div class="gallery-item">
+            <h2>Phoenix Statue</h2>
+            <model-viewer src="/static/models/phoenix_bird.glb" alt="Item 2"
+                          auto-rotate camera-controls background-color="#f0f0f0"></model-viewer>
+        </div>
+        <div class="gallery-item">
+            <h2>Wooden Bicycle</h2>
+            <model-viewer src="/static/models/wooden_bicycle.glb" alt="Item 2"
+                          auto-rotate camera-controls background-color="#f0f0f0"></model-viewer>
+        </div>
+        <div class="gallery-item">
+            <h2>Dodo Bird(Extincted in 2003)</h2>
+            <model-viewer src="/static/models/dodo.glb" alt="Item 2"
+                          auto-rotate camera-controls background-color="#f0f0f0"></model-viewer>
+        </div>
+        <div class="gallery-item">
+            <h2>Black and White Blewder TV</h2>
+            <model-viewer src="/static/models/black and white blewder tv.glb" alt="Item 2"
+                          auto-rotate camera-controls background-color="#f0f0f0"></model-viewer>
+        </div>
+        <div class="gallery-item">
+            <h2>Lion Skull Skulpture</h2>
+            <model-viewer src="/static/models/lion_skull.glb" alt="Item 2"
+                          auto-rotate camera-controls background-color="#f0f0f0"></model-viewer>
+        </div>
+        <div class="gallery-item">
+            <h2>Nefritis: King of Ancient Egypt</h2>
+            <model-viewer src="/static/models/nefertitis.glb" alt="Item 2"
+                          auto-rotate camera-controls background-color="#f0f0f0"></model-viewer>
+        </div>
+        <div class="gallery-item">
+            <h2>Extara Varex VX Camera</h2>
+            <model-viewer src="/static/models/exakta_varex_vx_camera.glb" alt="Item 2"
+                          auto-rotate camera-controls background-color="#f0f0f0"></model-viewer>
+        </div>
+        <div class="gallery-item">
+            <h2>Arrau Tortoise Skeleton</h2>
+            <model-viewer src="/static/models/arrau turtle.glb" alt="Item 2"
+                          auto-rotate camera-controls background-color="#f0f0f0"></model-viewer>
+        </div>
+        <div class="gallery-item">
+            <h2>Amenemhat 3rd</h2>
+            <model-viewer src="/static/models/amenemhat_iii.glb" alt="Item 2"
+                          auto-rotate camera-controls background-color="#f0f0f0"></model-viewer>
+        </div>
+        <div class="gallery-item">
+            <h2>Egyptian Mummy Coffin</h2>
+            <model-viewer src="/static/models/coffins.glb" alt="Item 2"
+                          auto-rotate camera-controls background-color="#f0f0f0"></model-viewer>
+        </div>
+        <div class="gallery-item">
+            <h2>Daoist Immortal He Xiangu</h2>
+            <model-viewer src="/static/models/daoist_immortal_he_xiangu.glb" alt="Item 2"
+                          auto-rotate camera-controls background-color="#f0f0f0"></model-viewer>
+        </div>
+        <div class="gallery-item">
+            <h2>Skulpture Bust Of Roza Loewenfeld</h2>
+            <model-viewer src="/static/models/sculpture_bust_of_roza_loewenfeld.glb" alt="Item 2"
+                          auto-rotate camera-controls background-color="#f0f0f0"></model-viewer>
+        </div>
+        <div class="gallery-item">
+            <h2>10th Century Goddess Durga Statue</h2>
+            <model-viewer src="/static/models/durga_slaying_the_buffalo_demon_10th_century_cr..glb" alt="Item 2"
+                          auto-rotate camera-controls background-color="#f0f0f0"></model-viewer>
+        </div>
+        <!-- Add more items as needed -->
+    </div>
+</body>
+</html>
