@@ -1,8 +1,8 @@
-# Multilingual Chatbot Ticket Booking System 🎟️🤖
+# ✈️Multilingual Chatbot Ticket Booking System 🎟️🤖
 
 ![Project Logo](resources/view.jpg)
 
-## Table of Contents
+## 📚Table of Contents
 - [About the Project](#about-the-project)
 - [Features](#features)
 - [Installation](#installation)
@@ -16,7 +16,7 @@
 
 ---
 
-## About the Project
+## 🚦About the Project
 
 This project is a **Multilingual Chatbot Ticket Booking System** that allows users to:
 - Book tickets
@@ -28,30 +28,30 @@ The chatbot is integrated with predefined responses and can assist users with bo
 
 ---
 
-## Features
-- **Multilingual support**: Users can select their preferred language.
-- **Chatbot Integration**: A chatbot to assist users with ticket booking and FAQs.
-- **Museum 3D Item Viewer**: A section where users can view 3D models of museum items.
-- **User Authentication**: Users can log in and register to manage bookings.
-- **Flask and PostgreSQL Integration**: Ticket bookings are stored and managed in a PostgreSQL database.
-- **Responsive Design**: The web app is mobile-friendly and works across devices.
+## 📖Features
+- **📌Multilingual support**: Users can select their preferred language.
+- **📌Chatbot Integration**: A chatbot to assist users with ticket booking and FAQs.
+- **📌Museum 3D Item Viewer**: A section where users can view 3D models of museum items.
+- **📌User Authentication**: Users can log in and register to manage bookings.
+- **📌Flask and PostgreSQL Integration**: Ticket bookings are stored and managed in a PostgreSQL database.
+- **📌Responsive Design**: The web app is mobile-friendly and works across devices.
 
 ---
 
-## Demo
+## 👀Demo
 
 You can view a live demo of the application [here](https://multilingual-chatbot-ticket-booking.onrender.com/).
 
-## Installation
+## 📍Installation
 
 To get a local copy of the project up and running, follow these steps:
 
-### Prerequisites
+### 📍Prerequisites
 
 - Python 3.12 or higher
 - PostgreSQL database
 
-### Setup Instructions
+### 🔖Setup Instructions
 
 1. **Clone the repository**
 
@@ -90,7 +90,7 @@ To get a local copy of the project up and running, follow these steps:
     Go to [http://localhost:5000](http://localhost:5000).
 
 
-### Tech Stack
+### 🔖Tech Stack
 
 - **Backend:** Flask (Python), Render (for PostgreSQL database hosting)
 - **Frontend:** HTML, CSS, JavaScript
@@ -98,22 +98,25 @@ To get a local copy of the project up and running, follow these steps:
 - **Chatbot:** Transformers (with predefined responses or AI-powered chatbot)
 - **3D Models:** Integrated viewer for 3D museum items
 
-### Usage
+### 🔖Usage
 
-- **Homepage:** Users can browse and book tickets or view museum items.
-- **Chatbot:** Available to assist users with booking and answering common queries.
-- **User Authentication:** Users can log in or sign up to manage their bookings.
+- **📌Homepage:** Users can browse and book tickets or view museum items.
+- **📌Chatbot:** Available to assist users with booking and answering common queries.
+- **📌User Authentication:** Users can log in or sign up to manage their bookings.
 
-### Deployment
+### 📓Deployment
 
 The app is deployed using Vercel for the frontend and Render for the PostgreSQL database.
 
-### Steps to Deploy
+### 📓Steps to Deploy
 
 1. Set up the environment variables on Vercel.
 2. Connect your project’s GitHub repository to Vercel.
 3. Configure Render for PostgreSQL and add the `DATABASE_URL` to Vercel's environment variables.
 
-### Contributing
+### 📓Contributing
 
 Contributions are welcome!
+
+## 📜License
+Repository protected through [License](#license) .
