@@ -1,4 +1,4 @@
-# ✈️Multilingual Chatbot Ticket Booking System 🎟️🤖
+# ✈️Multilingual Chatbot Integrated Museum Ticket Booking System 🎟️🤖
 
 ![Project Logo](resources/view.jpg)
 
