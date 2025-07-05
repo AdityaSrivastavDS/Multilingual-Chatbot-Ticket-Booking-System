@@ -10,7 +10,7 @@ from chatbot import get_chatbot_response
 app = Flask(__name__)
 app.config['BABEL_DEFAULT_LOCALE'] = 'en'
 app.config['SECRET_KEY'] = 'your_secret_key'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'enter_your_live_hosted_database_url'   #try to host a postgresql databse for better and fast response
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://dummy_f2p1_user:ACnMz20SWsnZDIa9nSkOhdiPrNdxj5KC@dpg-d1kmc83e5dus73ep3fb0-a.oregon-postgres.render.com/dummy_f2p1'   #try to host a postgresql databse for better and fast response
 app.config['STRIPE_PUBLIC_KEY'] = 'your_stripe_public_key'
 app.config['STRIPE_SECRET_KEY'] = 'your_stripe_secret_key'
 

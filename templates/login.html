@@ -1,30 +1,61 @@
 {% extends "base.html" %}
 
-{% block title %}Login - Ticket Booking System{% endblock %}
+{% block title %}Login - MuseumHub{% endblock %}
 
 {% block content %}
-<div class="row justify-content-center">
-    <div class="col-md-6">
-        <div class="card">
-            <div class="card-header">
-                <h3>Login</h3>
-            </div>
-            <div class="card-body">
-                <form action="{{ url_for('login') }}" method="POST">
-                    <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" id="username" name="username" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" class="form-control" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Login</button>
-                </form>
-                <div class="mt-3">
-                    <a class="btn btn-secondary" href="#">Login with Google</a>
-                    <a class="btn btn-secondary" href="#">Login with Facebook</a>
+<div class="auth-container">
+    <div class="auth-box">
+        <div class="auth-content">
+            <div class="auth-header">
+                <div class="auth-icon">
+                    <i class="fas fa-user-circle"></i>
                 </div>
+                <h2>Welcome Back</h2>
+                <p>Sign in to your MuseumHub account</p>
+            </div>
+            <form method="post" class="auth-form">
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <i class="fas fa-user input-icon"></i>
+                        <input type="text" id="username" name="username" class="form-input" placeholder="Username" required>
+                        <div class="input-line"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock input-icon"></i>
+                        <input type="password" id="password" name="password" class="form-input" placeholder="Password" required>
+                        <div class="input-line"></div>
+                    </div>
+                </div>
+                <div class="form-options">
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" id="remember">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-link">Forgot Password?</a>
+                </div>
+                <button type="submit" class="auth-btn primary">
+                    <span>Sign In</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+            <div class="social-login">
+                <p>Or continue with</p>
+                <div class="social-buttons">
+                    <button class="social-btn google">
+                        <i class="fab fa-google"></i>
+                        <span>Google</span>
+                    </button>
+                    <button class="social-btn facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </button>
+                </div>
+            </div>
+            <div class="auth-footer">
+                <p>Don't have an account? <a href="{{ url_for('register') }}" class="link-highlight">Sign up</a></p>
             </div>
         </div>
     </div>

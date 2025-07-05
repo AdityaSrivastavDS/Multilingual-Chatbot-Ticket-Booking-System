@@ -1,26 +1,74 @@
 {% extends "base.html" %}
 
-{% block title %}Register - Ticket Booking System{% endblock %}
+{% block title %}Register - MuseumHub{% endblock %}
 
 {% block content %}
-<div class="row justify-content-center">
-    <div class="col-md-6">
-        <div class="card">
-            <div class="card-header">
-                <h3>Register</h3>
+<div class="auth-container">
+    <div class="auth-box">
+        <div class="auth-content">
+            <div class="auth-header">
+                <div class="auth-icon">
+                    <i class="fas fa-user-plus"></i>
+                </div>
+                <h2>Join MuseumHub</h2>
+                <p>Create your account to start exploring</p>
             </div>
-            <div class="card-body">
-                <form action="{{ url_for('register') }}" method="POST">
-                    <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" id="username" name="username" class="form-control" required>
+            <form method="post" class="auth-form">
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <i class="fas fa-user input-icon"></i>
+                        <input type="text" id="username" name="username" class="form-input" placeholder="Username" required>
+                        <div class="input-line"></div>
                     </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope input-icon"></i>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="Email" required>
+                        <div class="input-line"></div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Register</button>
-                </form>
+                </div>
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock input-icon"></i>
+                        <input type="password" id="password" name="password" class="form-input" placeholder="Password" required>
+                        <div class="input-line"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock input-icon"></i>
+                        <input type="password" id="confirm_password" name="confirm_password" class="form-input" placeholder="Confirm Password" required>
+                        <div class="input-line"></div>
+                    </div>
+                </div>
+                <div class="form-options">
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" id="terms" required>
+                        <span class="checkmark"></span>
+                        I agree to the <a href="#" class="link-highlight">Terms & Conditions</a>
+                    </label>
+                </div>
+                <button type="submit" class="auth-btn primary">
+                    <span>Create Account</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+            <div class="social-login">
+                <p>Or sign up with</p>
+                <div class="social-buttons">
+                    <button class="social-btn google">
+                        <i class="fab fa-google"></i>
+                        <span>Google</span>
+                    </button>
+                    <button class="social-btn facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </button>
+                </div>
+            </div>
+            <div class="auth-footer">
+                <p>Already have an account? <a href="{{ url_for('login') }}" class="link-highlight">Sign in</a></p>
             </div>
         </div>
     </div>

@@ -1,32 +1,26 @@
 {% extends "base.html" %}
 
-{% block title %}Book Ticket - Ticket Booking System{% endblock %}
+{% block title %}Book Ticket - MuseumHub{% endblock %}
 
 {% block content %}
-<div class="row justify-content-center">
-    <div class="col-md-6">
-        <div class="card">
-            <div class="card-header">
-                <h3>Book a Ticket</h3>
-            </div>
-            <div class="card-body">
-                <form action="{{ url_for('book_ticket') }}" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="age">Age</label>
-                        <input type="number" id="age" name="age" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" class="form-control" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Book Ticket</button>
-                </form>
-            </div>
+<div class="modern-form">
+    <h2 class="text-center mb-4"><i class="fas fa-ticket-alt"></i> Book Your Ticket</h2>
+    <form method="post">
+        <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" type="text" id="name" name="name" required>
         </div>
-    </div>
+        <div class="form-group">
+            <label class="form-label" for="age">Age</label>
+            <input class="form-input" type="number" id="age" name="age" min="1" required>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" name="email" required>
+        </div>
+        <button type="submit" class="modern-btn primary w-100 mt-3">
+            <i class="fas fa-paper-plane"></i> Book Ticket
+        </button>
+    </form>
 </div>
 {% endblock %}
