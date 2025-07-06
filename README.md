@@ -1,6 +1,5 @@
 # ✈️Multilingual Chatbot Integrated Museum Ticket Booking System 🎟️🤖
 
-![Project Logo](resources/view.jpg)
 
 ## 📚Table of Contents
 - [About the Project](#about-the-project)
@@ -38,9 +37,46 @@ The chatbot is integrated with predefined responses and can assist users with bo
 
 ---
 
-## 👀Demo
+## 🖥️ Screenshots
 
-You can view a live demo of the application [here](https://multilingual-chatbot-ticket-booking.onrender.com/).
+<table border="0" cellpadding="10" cellspacing="0" align="center">
+  <tr>
+    <td align="center"><h3>🏠 Landing Page</h3></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="resources/homepage.png" alt="Homepage" width="500"></td>
+  </tr>
+  <tr>
+    <td align="center"><h3>🖼️ Services</h3></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="resources/services.png" alt="Live Detection" width="500"></td>
+  </tr>
+  <tr>
+    <td align="center"><h3>🛡️ ChatBot</h3></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="resources/chatbot.png" alt="Admin Portal" width="500"></td>
+  </tr>
+  <tr>
+    <td align="center"><h3>📊 SignIN/Register</h3></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="resources/login.png" alt="Reports" width="500"></td>
+  </tr>
+    <tr>
+    <td align="center"><h3>Museum Model View</h3></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="resources/view.png" alt="Reports" width="500"></td>
+  </tr>
+</table>
+
+
+---
+## 👀Hosted
+
+You can view and use live application [here](https://museumhub.onrender.com/).
 
 ## 📍Installation
 
